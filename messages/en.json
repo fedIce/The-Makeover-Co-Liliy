@@ -1,0 +1,477 @@
+{
+  "nav": {
+    "brand": "THE MAKEOVER CO.",
+    "brandBy": "BY LILLY",
+    "home": "Home",
+    "services": "Services",
+    "lookbook": "Lookbook",
+    "aboutLilly": "About Lilly",
+    "reviews": "Reviews",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "account": "Account",
+    "admin": "Admin",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "bookAppointment": "Book Appointment",
+    "bookShort": "Book Now",
+    "openMenu": "Open menu"
+  },
+  "home": {
+    "hero": {
+      "label": "Luxury Hair Specialist",
+      "titleLine1": "Confidence",
+      "titleLine2": "begins with",
+      "titleScript": "beautiful hair",
+      "subtitle": "Expert in blondes, balayage and colour corrections. Every detail, crafted to enhance your natural beauty.",
+      "ctaBook": "Book Your Appointment",
+      "ctaLookbook": "View Lookbook",
+      "scroll": "Scroll to Discover",
+      "imageAlt": "Woman with long wavy balayage hair"
+    },
+    "features": {
+      "blondeSpecialist": "Blonde Specialist",
+      "colourExpert": "Colour Expert",
+      "premiumProducts": "Premium Products",
+      "personalisedApproach": "Personalised Approach",
+      "luxuryExperience": "Luxury Experience",
+      "impeccableResults": "Impeccable Results"
+    },
+    "experience": {
+      "label": "The Makeover Experience",
+      "titleLine1": "It's more than",
+      "titleLine2": "just a hair appointment.",
+      "script": "It's your transformation.",
+      "body": "With years of experience and a perfectionist approach, I create bespoke colour and transformations that enhance your natural beauty and boost your confidence.",
+      "cta": "Meet Lilly",
+      "before": "Before",
+      "after": "After",
+      "beforeAlt": "Before — natural textured hair",
+      "afterAlt": "After — smooth styled waves"
+    },
+    "services": {
+      "label": "Signature Services",
+      "title": "Bespoke treatments. Exceptional results.",
+      "fromPrice": "From {price}",
+      "bookNow": "Book Now",
+      "viewAll": "View All Services",
+      "items": {
+        "unlimited-blonding": {
+          "title": "Unlimited Blonding",
+          "description": "Seamless blondes with depth & dimension."
+        },
+        "balayage-highlights": {
+          "title": "Balayage & Highlights",
+          "description": "Hand-painted for a natural blend."
+        },
+        "colour-correction": {
+          "title": "Colour Correction",
+          "description": "Fix, balance & transform with precision."
+        },
+        "gloss-toner": {
+          "title": "Gloss & Toner",
+          "description": "Add shine, tone & refresh your colour."
+        },
+        "hair-botox": {
+          "title": "Hair Botox",
+          "description": "Smooth, repair & restore your hair."
+        },
+        "hair-extensions": {
+          "title": "Hair Extensions",
+          "description": "Add length, volume & confidence."
+        }
+      }
+    },
+    "meetLilly": {
+      "label": "Meet Lilly",
+      "title": "Perfection is in the details.",
+      "body": "Hair is personal. Every client deserves a colour story that feels effortless, elevated, and entirely their own — never rushed, never one-size-fits-all.",
+      "name": "Lilly",
+      "role": "Founder & Colour Specialist",
+      "imageAlt": "Lilly styling a client's hair",
+      "points": {
+        "dedicated": {
+          "title": "One Dedicated Stylist",
+          "text": "All the difficult work goes through my hands."
+        },
+        "blondes": {
+          "title": "Expert in Blondes",
+          "text": "Specialist techniques for soft, lived-in blondes."
+        },
+        "products": {
+          "title": "Premium Products",
+          "text": "Professional-grade colour systems chosen for shine."
+        },
+        "private": {
+          "title": "Relaxed & Private",
+          "text": "A calm setting where you can fully unwind."
+        }
+      }
+    },
+    "instagram": {
+      "label": "Follow My Work",
+      "viewMore": "View More on Instagram →",
+      "imageAlt": "Salon work {n}"
+    },
+    "testimonials": {
+      "label": "Client Love",
+      "ratingAria": "5 star rating",
+      "reviews": {
+        "andrea": {
+          "name": "Andrea K.",
+          "text": "Lilly transformed my hair completely. The blonde is soft, dimensional, and healthier than I expected."
+        },
+        "maria": {
+          "name": "Maria S.",
+          "text": "I've never felt so understood as a client. She listened, explained every step, and the result was perfect."
+        },
+        "elena": {
+          "name": "Elena P.",
+          "text": "From the calm atmosphere to the impeccable finish, everything was perfect. I get compliments every week."
+        }
+      }
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Services | The Makeover Co. by Lilly",
+      "description": "Blonde atelier, brunette studio, colour transformations, bridal styling, hair health, extensions, cuts, and finishing touches in Limassol."
+    },
+    "hero": {
+      "label": "Our Services",
+      "titleLine1": "Crafted for every",
+      "titleLine2": "version of you.",
+      "script": "Luxury hair. Personalised to perfection.",
+      "body": "Expert colour, restorative treatments, and bespoke styling — designed around your hair, your lifestyle, and the look you want to wake up to.",
+      "cta": "Book Your Appointment",
+      "tagline": "Let's create your best hair yet.",
+      "imageAlt": "Woman with long wavy brunette hair"
+    },
+    "discover": "Discover",
+    "blocks": {
+      "blonde-atelier": {
+        "number": "01",
+        "title": "Blonde Atelier",
+        "tagline": "Bright. Dimensional. Effortless.",
+        "body": "From soft lived-in blondes to high-impact platinum — crafted with precision, care, and the health of your hair always first.",
+        "primaryAlt": "Blonde dimensional hair",
+        "secondaryAlt": "Salon colour products on a tray"
+      },
+      "brunette-studio": {
+        "number": "02",
+        "title": "Brunette Studio",
+        "tagline": "Rich. Glossy. Quiet luxury.",
+        "body": "Depth, shine, and soft dimension for brunettes who want that expensive, effortless finish — from chocolate to espresso.",
+        "primaryAlt": "Rich brunette hair"
+      },
+      "colour-transformations": {
+        "number": "03",
+        "title": "Colour Transformations",
+        "tagline": "Expert colour. Multi-tonal perfection.",
+        "body": "Bold changes, corrections, and custom colour stories — planned carefully so the result feels intentional, not accidental.",
+        "quote": "Expert colour. Results. Blends. Perfection.",
+        "primaryAlt": "Copper colour transformation",
+        "secondaryAlt": "Colour tools and brushes"
+      },
+      "bridal-styling": {
+        "number": "04",
+        "title": "Bridal Styling",
+        "tagline": "Timeless. Soft. Unforgettable.",
+        "body": "Trial-to-day-of styling for brides and bridal parties — romantic updos, soft waves, and finishes that photograph beautifully.",
+        "quote": "Because every detail should feel as special as the moment itself.",
+        "primaryAlt": "Bridal updo with hairpiece",
+        "secondaryAlt": "White floral detail"
+      },
+      "hair-health": {
+        "number": "05",
+        "title": "Hair Health",
+        "tagline": "Restore. Strengthen. Glow.",
+        "body": "Treatments that rebuild softness and strength — so colour lasts longer, styles hold better, and hair feels as good as it looks.",
+        "primaryAlt": "Hair wash treatment",
+        "secondaryAlt": "Hair care ritual products"
+      },
+      "extensions": {
+        "number": "06",
+        "title": "Extensions",
+        "tagline": "Length. Volume. Confidence.",
+        "body": "Seamless extensions matched to your colour and lifestyle — for fuller density, added length, or a soft temporary change.",
+        "primaryAlt": "Long wavy extensions"
+      },
+      "cut-styling": {
+        "number": "07",
+        "title": "Cut & Styling",
+        "tagline": "Shape. Movement. Ease.",
+        "body": "Precision cuts and finishing that work with your texture — from soft layers to sharp bobs that grow out beautifully.",
+        "primaryAlt": "Short blonde bob cut"
+      },
+      "finishing-touches": {
+        "number": "08",
+        "title": "Finishing Touches",
+        "tagline": "Polish. Shine. Longevity.",
+        "body": "Gloss, toner, and styling refinements that lock in colour, add mirror shine, and keep your look salon-fresh between visits.",
+        "primaryAlt": "Styling tools and finishing"
+      }
+    },
+    "cta": {
+      "title": "Ready for your transformation?",
+      "script": "Spots fill up fast — secure your appointment today.",
+      "button": "Book Your Appointment"
+    }
+  },
+  "lookbook": {
+    "meta": {
+      "title": "Lookbook | The Makeover Co. by Lilly",
+      "description": "Explore curated hair looks — bridal styles, blondes, brunettes, and bold transformations by Lilly."
+    },
+    "hero": {
+      "label": "The Lookbook",
+      "titleLine1": "Find your",
+      "titleLine2": "perfect look.",
+      "script": "Every style. Every you.",
+      "body": "Explore a curated collection of looks created in our salon. From timeless brides to bold transformations.",
+      "cta": "Book Your Consultation",
+      "sideScriptLine1": "Timeless beauty",
+      "sideScriptLine2": "for your big day.",
+      "bridalLooks": "Bridal Looks",
+      "viewCollection": "View Collection",
+      "imageAlt": "Bridal updo with soft floral backdrop"
+    },
+    "viewLooks": "View Looks",
+    "styles": {
+      "old-money-brunette": {
+        "title": "Glossy Brunette",
+        "description": "Rich tones. Mirror shine. Night-out polish."
+      },
+      "beach-blondes": {
+        "title": "Beach Blondes",
+        "description": "Sun-kissed dimension. Soft blends. Natural movement."
+      },
+      "goth-chic": {
+        "title": "Goth Chic",
+        "description": "Dark. Sharp. Fearless. For the bold at heart."
+      },
+      "bombshell-vibes": {
+        "title": "Bombshell Vibes",
+        "description": "Big volume. Glam waves. All eyes on you."
+      },
+      "soft-girl": {
+        "title": "Soft Girl Aesthetic",
+        "description": "Effortless. Pretty. Soft layers & subtle tones."
+      },
+      "copper-goddess": {
+        "title": "Copper Goddess",
+        "description": "Warm. Fiery. Unforgettable."
+      },
+      "french-bob": {
+        "title": "French Bob",
+        "description": "Chic. Precise. Parisian edge."
+      },
+      "mermaid-hair": {
+        "title": "Mermaid Hair",
+        "description": "Flowing length. Soft dimension."
+      },
+      "curly-queen": {
+        "title": "Curly Queen",
+        "description": "Defined curls. Natural texture."
+      },
+      "party-glam": {
+        "title": "Party Glam",
+        "description": "Night-ready shine & polish."
+      }
+    },
+    "transformations": {
+      "titleLine1": "Before & After",
+      "titleLine2": "Transformations",
+      "body": "Real clients. Real results. Swipe to see the magic.",
+      "seeAll": "See Transformations",
+      "nextAria": "Next transformations",
+      "beforeAlt": "Before — {label}",
+      "afterAlt": "After — {label}",
+      "pairs": {
+        "softWaves": "Soft waves",
+        "brunetteGloss": "Brunette gloss",
+        "colourRefresh": "Colour refresh",
+        "copperGlow": "Copper glow"
+      }
+    },
+    "cta": {
+      "script": "Your next look is just an appointment away.",
+      "body": "Let's create something beautiful together.",
+      "button": "Book Your Appointment",
+      "note": "Spots fill up fast — secure yours today."
+    }
+  },
+  "book": {
+    "meta": {
+      "title": "Book | The Makeover Co. by Lilly"
+    },
+    "loading": "Loading…",
+    "label": "Book",
+    "title": "Book your appointment",
+    "closeAria": "Close booking",
+    "intro": "Secure your time with a deposit. Balance is due in salon.",
+    "steps": {
+      "service": "service",
+      "date": "date",
+      "time": "time",
+      "details": "details",
+      "review": "review"
+    },
+    "leave": {
+      "label": "Leave booking",
+      "title": "Close without finishing?",
+      "body": "Your progress in this booking won't be saved. Are you sure you want to leave?",
+      "keep": "Keep booking",
+      "confirm": "Yes, close"
+    },
+    "service": {
+      "loading": "Loading services…",
+      "empty": "No services available right now.",
+      "retry": "Retry",
+      "loadError": "Could not load services. Try again.",
+      "durationPrice": "~{duration} min",
+      "priceDeposit": "{price} · dep. {deposit}"
+    },
+    "date": {
+      "loading": "Loading available dates…",
+      "hint": "Colour shows how full the day is for this service's time estimate. Pick a day, then a start time — several bookings can share one day.",
+      "empty": "No open dates in this period. Try the next month, or check weekly hours in admin.",
+      "dayTitle": "{booked}/{capacity} appointments · {slots} start times left",
+      "weekdays": {
+        "mon": "Mon",
+        "tue": "Tue",
+        "wed": "Wed",
+        "thu": "Thu",
+        "fri": "Fri",
+        "sat": "Sat",
+        "sun": "Sun"
+      },
+      "legend": {
+        "open": "Open",
+        "light": "Light",
+        "busy": "Busy",
+        "nearlyFull": "Nearly full"
+      }
+    },
+    "time": {
+      "hint": "Grey times are already taken (bookings or calendar) or too soon to book.",
+      "unavailable": "Unavailable",
+      "tooSoon": "Too soon to book",
+      "none": "No times for this day.",
+      "noneOpen": "No open times left this day."
+    },
+    "details": {
+      "changeTime": "Change time",
+      "fullName": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "notes": "Notes / hair history",
+      "reviewCta": "Review booking"
+    },
+    "review": {
+      "when": "{date} at {time} · {duration} min",
+      "serviceTotal": "Service total: {price}",
+      "depositDue": "Deposit due now: {deposit}",
+      "balanceInSalon": "Balance in salon: {balance}",
+      "devMode": "Dev mode — confirm without charging (test payment)",
+      "cancellation": "Free cancellation up to 48 hours before your appointment. Inside that window the deposit is non-refundable.",
+      "editDetails": "Edit details",
+      "confirming": "Confirming…",
+      "confirmTest": "Confirm test booking",
+      "payDeposit": "Pay deposit"
+    },
+    "errors": {
+      "reserve": "Could not reserve slot",
+      "checkout": "Checkout failed",
+      "noUrl": "No checkout URL",
+      "generic": "Something went wrong"
+    },
+    "success": {
+      "devMode": "Dev mode — test payment (no Stripe charge)",
+      "label": "Confirmed",
+      "title": "Thank you",
+      "summary": "{title} on {when}",
+      "depositPaid": "Deposit paid: {amount}",
+      "balanceDue": "Balance due in salon: {amount}",
+      "generic": "Your deposit payment was received. A confirmation email is on its way.",
+      "viewAppointments": "View my appointments",
+      "signInEmail": "Sign in with email"
+    }
+  },
+  "auth": {
+    "meta": {
+      "title": "Sign in | The Makeover Co. by Lilly"
+    },
+    "label": "Account",
+    "title": "Sign in",
+    "subtitle": "We'll email you a magic link — no password needed.",
+    "error": "Could not sign in. Please try again.",
+    "email": "Email",
+    "devHint": "Dev mode: if Resend blocks the email, a sign-in link will appear here.",
+    "sending": "Sending…",
+    "submit": "Email me a link",
+    "sentCheck": "Check {email} for your sign-in link.",
+    "sentDev": "Email may be blocked in Resend test mode. Use this link for {email}:",
+    "openLink": "Open sign-in link",
+    "sendFailed": "Could not send the sign-in email. With Resend's free tier, only freedez1996@gmail.com works until a domain is verified.",
+    "checkEmail": {
+      "title": "Check your email",
+      "body": "A sign-in link is on its way. It expires shortly for your security."
+    },
+    "signOut": "Sign out"
+  },
+  "account": {
+    "label": "Account",
+    "title": "My appointments",
+    "bookAgain": "Book again",
+    "upcoming": "Upcoming",
+    "past": "Past",
+    "noUpcoming": "No upcoming appointments.",
+    "noPast": "No past appointments yet.",
+    "depositBalance": "Deposit paid {deposit} · Balance {balance}",
+    "reschedule": "Reschedule (rebook) →",
+    "cancel": "Cancel",
+    "cancelling": "Cancelling…",
+    "cancelConfirm": "Cancel this appointment?",
+    "cancelError": "Could not cancel",
+    "status": {
+      "CONFIRMED": "Confirmed",
+      "COMPLETED": "Completed",
+      "CANCELLED": "Cancelled",
+      "NO_SHOW": "No show"
+    }
+  },
+  "footer": {
+    "title": "Ready for your transformation?",
+    "body": "Book your appointment today and experience The Makeover Co. difference.",
+    "cta": "Book Your Appointment",
+    "brand": "THE MAKEOVER CO.",
+    "brandBy": "BY LILLY",
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "tiktok": "TikTok",
+      "whatsapp": "WhatsApp"
+    },
+    "phone": "+357 99 123 456",
+    "email": "info@themakeoverco.com",
+    "address": "20 Georgiou A' Avenue, Limassol, Cyprus",
+    "copyright": "© 2024 The Makeover Co. All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+  "common": {
+    "brand": "THE MAKEOVER CO.",
+    "brandBy": "BY LILLY",
+    "bookAppointment": "Book Your Appointment",
+    "loading": "Loading…",
+    "retry": "Retry",
+    "back": "← {label}",
+    "fromPrice": "From {price}",
+    "languages": {
+      "en": "EN",
+      "el": "EL",
+      "ru": "RU"
+    }
+  }
+}

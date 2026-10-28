@@ -1,0 +1,169 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  CLIENT
+  ADMIN
+}
+
+enum BookingStatus {
+  HOLD
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+  NO_SHOW
+}
+
+enum ReminderType {
+  H48
+  H24
+  MORNING
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  phone         String?
+  image         String?
+  role          Role      @default(CLIENT)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  accounts Account[]
+  sessions Session[]
+  bookings Booking[]
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Service {
+  id           String   @id @default(cuid())
+  slug         String   @unique
+  title        String
+  description  String
+  durationMin  Int
+  bufferMin    Int      @default(15)
+  priceCents   Int
+  depositCents Int
+  active       Boolean  @default(true)
+  imageUrl     String?
+  sortOrder    Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  bookings Booking[]
+}
+
+model AvailabilityRule {
+  id        String @id @default(cuid())
+  /// 0 = Sunday … 6 = Saturday (JS getDay)
+  weekday   Int
+  startTime String
+  endTime   String
+}
+
+model AvailabilityException {
+  id        String  @id @default(cuid())
+  date      DateTime @db.Date
+  closed    Boolean @default(true)
+  startTime String?
+  endTime   String?
+  note      String?
+}
+
+model Booking {
+  id                    String        @id @default(cuid())
+  clientId              String?
+  serviceId             String
+  guestName             String
+  guestEmail            String
+  guestPhone            String?
+  notes                 String?       @db.Text
+  startsAt              DateTime
+  endsAt                DateTime
+  status                BookingStatus @default(HOLD)
+  holdExpiresAt         DateTime?
+  stripeSessionId       String?       @unique
+  stripePaymentIntentId String?
+  depositPaidCents      Int           @default(0)
+  balanceDueCents       Int           @default(0)
+  googleEventId         String?       @unique
+  cancelToken           String        @unique @default(cuid())
+  createdAt             DateTime      @default(now())
+  updatedAt             DateTime      @updatedAt
+
+  client    User?         @relation(fields: [clientId], references: [id], onDelete: SetNull)
+  service   Service       @relation(fields: [serviceId], references: [id])
+  reminders ReminderLog[]
+
+  @@index([startsAt, endsAt])
+  @@index([status])
+  @@index([clientId])
+  @@index([guestEmail])
+}
+
+model ReminderLog {
+  id        String       @id @default(cuid())
+  bookingId String
+  type      ReminderType
+  sentAt    DateTime     @default(now())
+
+  booking Booking @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+
+  @@unique([bookingId, type])
+}
+
+model AdminSettings {
+  id                    String   @id @default("default")
+  googleRefreshTokenEnc String?  @db.Text
+  googleCalendarId      String?  @default("primary")
+  googleConnectedEmail  String?
+  cancelWindowHours     Int      @default(48)
+  holdTtlMinutes        Int      @default(12)
+  reminderH48           Boolean  @default(true)
+  reminderH24           Boolean  @default(true)
+  reminderMorning       Boolean  @default(true)
+  timezone              String   @default("Asia/Nicosia")
+  updatedAt             DateTime @updatedAt
+}

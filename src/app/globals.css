@@ -1,26 +1,188 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --header-h: 6.5rem;
+  /* Sampled + refined from reference mockups */
+  --cream: #f9f5f0;
+  --cream-deep: #f3ebe3;
+  --sand: #e8d9cb;
+  --charcoal: #1b110c;
+  --charcoal-soft: #2a1c15;
+  --copper: #b86a4a;
+  --copper-hover: #a0593c;
+  --copper-soft: #c5a582;
+  --ink: #1a1412;
+  --muted: #6e6560;
+  --star: #b86a4a;
+  --background: var(--cream);
+  --foreground: var(--ink);
 }
 
 @theme inline {
+  --color-cream: var(--cream);
+  --color-cream-deep: var(--cream-deep);
+  --color-sand: var(--sand);
+  --color-charcoal: var(--charcoal);
+  --color-charcoal-soft: var(--charcoal-soft);
+  --color-copper: var(--copper);
+  --color-copper-hover: var(--copper-hover);
+  --color-copper-soft: var(--copper-soft);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-star: var(--star);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans), var(--font-sans-greek);
+  --font-script: var(--font-script);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), var(--font-sans-greek), sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--copper) 35%, transparent);
+  color: var(--ink);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scroll-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.85s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out both;
+}
+
+.animate-scroll {
+  animation: scroll-bounce 1.8s ease-in-out infinite;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
+.delay-300 {
+  animation-delay: 0.3s;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  background: var(--copper);
+  color: #fff;
+  padding: 0.9rem 1.6rem;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  line-height: 1;
+  border-radius: 0;
+  transition: background 0.25s ease;
+}
+
+.btn-primary:hover {
+  background: var(--copper-hover);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border: 1px solid var(--copper);
+  color: var(--copper);
+  background: transparent;
+  padding: 0.9rem 1.6rem;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  line-height: 1;
+  border-radius: 0;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.btn-outline:hover {
+  background: var(--copper);
+  color: #fff;
+}
+
+.section-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--copper);
+}
+
+.script {
+  font-family: var(--font-script), cursive;
+  color: var(--copper);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hairline {
+  display: block;
+  width: 2.5rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.55;
+}
+
+.container-site {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .container-site {
+    padding-inline: 2.5rem;
+  }
 }
